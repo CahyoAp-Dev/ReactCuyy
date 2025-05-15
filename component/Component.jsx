@@ -7,6 +7,7 @@ export default function Component() {
   );
 }
 
+// U can create multiple function in one file
 function HeaderHelloWorld() {
   return (
     <h1>Hello World</h1>
