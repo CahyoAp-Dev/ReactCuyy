@@ -1,9 +1,16 @@
 import { createRoot } from "react-dom/client";
-import HelloWorld from "./HelloWorld.jsx";
 import { StrictMode } from "react";
+import Container from "../nested-component/Container.jsx";
+import CollectionTodoList from "../collection-component/CollectionTodoList.jsx";
+import ConditionalTodoList from "../conditional/ConditionalTodoList.jsx";
+import Props from "../props/Props.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <HelloWorld />
+    <Container>
+      <Props />
+      <CollectionTodoList />
+      <ConditionalTodoList />
+    </Container>
   </StrictMode>
 );
