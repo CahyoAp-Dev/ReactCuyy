@@ -24,7 +24,7 @@ export default function CollectionTodoList() {
   return (
     <ul>
       {data.map((todo) => (
-        <Todo {...todo} />
+        <Todo key={todo.text} {...todo} />
       ))}
     </ul>
   );
