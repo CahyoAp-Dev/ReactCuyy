@@ -8,6 +8,7 @@ import Table from "../pure-component/Table.jsx";
 import AlertButton from "../event-handler/AlertButton.jsx";
 import MyButton from "../event-handler/MyButton.jsx";
 import SearchForm from "../event-propagation/SearchForm.jsx";
+import SayHelloForm from "../side-effect/SayHelloForm.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -21,6 +22,8 @@ createRoot(document.getElementById("root")).render(
       <MyButton onSmash={() => alert("You smash me")} text="Smash me" />
 
       <SearchForm />
+
+      <SayHelloForm />
     </Container>
   </StrictMode>
 );
