@@ -7,6 +7,7 @@ import Props from "../props/Props.jsx";
 import Table from "../pure-component/Table.jsx";
 import AlertButton from "../event-handler/AlertButton.jsx";
 import MyButton from "../event-handler/MyButton.jsx";
+import SearchForm from "../event-propagation/SearchForm.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -18,6 +19,8 @@ createRoot(document.getElementById("root")).render(
       <AlertButton text="Click me" message="You click me" />
 
       <MyButton onSmash={() => alert("You smash me")} text="Smash me" />
+
+      <SearchForm />
     </Container>
   </StrictMode>
 );
