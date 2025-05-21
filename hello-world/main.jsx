@@ -9,6 +9,7 @@ import AlertButton from "../event-handler/AlertButton.jsx";
 import MyButton from "../event-handler/MyButton.jsx";
 import SearchForm from "../event-propagation/SearchForm.jsx";
 import SayHelloForm from "../side-effect/SayHelloForm.jsx";
+import Counter from "../state/Counter.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -24,6 +25,8 @@ createRoot(document.getElementById("root")).render(
       <SearchForm />
 
       <SayHelloForm />
+
+      <Counter />
     </Container>
   </StrictMode>
 );
